@@ -4,3 +4,10 @@ server:
 spring:
   profiles:
     active: native #Look for local files inside resources/config
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/config,classpath:/app1,classpath:/app2 #In case of having same files, last location has the more priority
+        overrides:
+          name: OtherValueTOOverride #This add an extra result for override the original values

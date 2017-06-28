@@ -1,0 +1,4 @@
+application:
+  name: App1
+  description: App one is for tests
+  profile: undefined-1

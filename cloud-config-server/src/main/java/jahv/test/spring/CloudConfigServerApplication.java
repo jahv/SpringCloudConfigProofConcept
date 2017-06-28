@@ -12,10 +12,8 @@ public class CloudConfigServerApplication {
 		SpringApplication.run(CloudConfigServerApplication.class, args);
 
 		// For invoke
-		// http://localhost:8888/{fileName}/{profile} if no profile, then use default
-		//		http://localhost:8888/db/default
-		//		http://localhost:8888/db/dev
-		//		http://localhost:8888/db/qa
-		//		http://localhost:8888/db/prod
+		// http://localhost:8888/myApp/dev
+        // http://localhost:8888/myApp/dev.json
+        // http://localhost:8888/myApp-dev.json
 	}
 }
