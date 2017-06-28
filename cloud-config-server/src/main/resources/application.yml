@@ -10,14 +10,17 @@ spring:
           search-paths: #Let look for paths inside repo
             - app*
           force-pull: true # Always go to the repo to read the values, otherwise read from local downloaded version
-
-          repos:
-            jndi:
-              pattern:
-                - "*/jndi"
-              uri: https://github.com/jahv/SpringCloudConfigTest-ConfigFiles-jndi
-              search-paths:
-                - app*
-
           #username: Not needed since is a public repo
           #password:
+#          repos:
+#            jndi:
+#              pattern:
+#                - "*/jndi"
+#              uri: https://github.com/jahv/SpringCloudConfigTest-ConfigFiles-jndi
+#              search-paths:
+#                - app*
+
+security:
+  user:
+    name: root
+    password: s3cr3t
